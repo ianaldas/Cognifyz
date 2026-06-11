@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Design - Level 2 Task 2</title>
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <span class="logo">Cognifyz</span>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Web Developer Internship</h1>
+      <p>Learn. Build. Grow. Join Cognifyz Technologies and kickstart your web development career with real-world projects.</p>
+      <a href="#about" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2>About the Program</h2>
+      <p>Our internship program is designed to give you hands-on experience in web development. You will work through three progressive levels, building real projects using HTML, CSS, JavaScript, and modern frameworks.</p>
+    </div>
+  </section>
+
+  <!-- Services / Cards Section -->
+  <section class="section bg-light" id="services">
+    <div class="container">
+      <h2>What You Will Learn</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">💻</div>
+          <h3>HTML & CSS</h3>
+          <p>Build structured, styled web pages from scratch with modern best practices.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>Add interactivity and dynamic behavior to your websites using JavaScript.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3>Responsive Design</h3>
+          <p>Make your websites look great on all devices using media queries and frameworks.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <h3>Frameworks</h3>
+          <p>Speed up development with Bootstrap, Bulma, and other front-end frameworks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-grid">
+        <div>
+          <p>Have questions about the internship? Reach out to us and we'll get back to you as soon as possible.</p>
+          <ul class="contact-list">
+            <li>📧 contact@cognifyz.com</li>
+            <li>🌐 www.cognifyz.com</li>
+            <li>📸 @cognifyz_tech</li>
+          </ul>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <textarea placeholder="Your Message" rows="4"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Cognifyz Technologies. All rights reserved.</p>
+  </footer>
+
+  <script src="responsive.js"></script>
+</body>
+</html>

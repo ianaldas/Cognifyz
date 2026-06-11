@@ -1,0 +1,192 @@
+/* ── Design tokens ── */
+:root {
+  --bg: #F7F6F2;
+  --surface: #FFFFFF;
+  --ink: #1A1A2E;
+  --muted: #6B7280;
+  --accent: #5C6BC0;
+  --accent2: #E91E63;
+  --border: #E2E1DC;
+  --radius: 10px;
+  --font-head: 'Georgia', serif;
+  --font-body: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* ── Reset ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+/* ── NAVIGATION ── */
+nav {
+  background: var(--ink);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-inner {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 56px;
+}
+
+.nav-logo {
+  color: #fff;
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+}
+
+.nav-logo span {
+  color: var(--accent2);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ── PAGE ── */
+.page {
+  max-width: 900px;
+  margin: 48px auto;
+  padding: 0 24px;
+}
+
+/* ── BADGE ── */
+.badge {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+/* ── SECTION TEXT ── */
+.section-title {
+  font-family: var(--font-head);
+  font-size: 1.7rem;
+  margin: 8px 0;
+}
+
+.section-desc {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 32px;
+}
+
+section {
+  margin-bottom: 72px;
+}
+
+/* ── TASK ROW ── */
+.task-row {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.task-num {
+  font-size: 2.8rem;
+  font-family: var(--font-head);
+  color: var(--border);
+}
+
+/* ── CARD ── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.card-img-placeholder {
+  height: 220px;
+  background: linear-gradient(135deg, #5C6BC0, #E91E63);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: var(--font-head);
+}
+
+.card-body {
+  padding: 28px;
+}
+
+/* ── FORM ── */
+.form-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 36px 40px;
+  max-width: 480px;
+}
+
+label {
+  display: block;
+  font-size: 0.88rem;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 11px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #3f51b5;
+}
+
+/* ── FOOTER ── */
+footer {
+  text-align: center;
+  padding: 40px 24px;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}

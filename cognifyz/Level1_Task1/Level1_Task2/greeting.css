@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f8;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #ffffff;
+  padding: 48px 56px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 440px;
+  width: 100%;
+}
+
+.clock-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 1.7rem;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #777;
+  margin-bottom: 28px;
+  font-size: 0.97rem;
+}
+
+.greeting-box {
+  background: #eef0fb;
+  border-left: 4px solid #5c6bc0;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  text-align: left;
+}
+
+.greeting-box.hidden {
+  display: none;
+}
+
+#greetBtn {
+  padding: 13px 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #5c6bc0;
+  color: #ffffff;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 4px 14px rgba(92,107,192,0.35);
+}
+
+#greetBtn:hover  { background: #3f51b5; }
+#greetBtn:active { transform: scale(0.96); }

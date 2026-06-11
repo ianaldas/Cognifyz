@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Level 1 – Task 1 | Cognifyz Web Dev Internship</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ① Navigation Menu (3 links) -->
+  <nav aria-label="Main navigation">
+    <div class="nav-inner">
+      <span class="nav-logo">Cogni<span>fyz</span></span>
+      <ul class="nav-links">
+        <li><a href="#webpage" class="active">Webpage</a></li>
+        <li><a href="#form">Form</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+
+    <!-- Page intro -->
+    <header style="margin-bottom:56px;">
+      <span class="badge">Level 1 · Task 1</span>
+      <h1 class="section-title" style="font-size:2.2rem;">HTML &amp; CSS Basics</h1>
+      <p class="section-desc" style="font-size:1rem; max-width:560px;">
+        Three foundational components — a semantic webpage, a form with a submit button,
+        and a navigation menu — built with clean HTML and purposeful CSS.
+      </p>
+    </header>
+
+    <!-- ② Simple Webpage -->
+    <section id="webpage">
+      <div class="task-row">
+        <span class="task-num" aria-hidden="true">01</span>
+        <div>
+          <span class="badge">Webpage</span>
+          <h2 class="section-title">Heading, Paragraph &amp; Image</h2>
+        </div>
+      </div>
+
+      <p class="section-desc">A simple webpage structure using semantic HTML elements and styled with CSS.</p>
+
+      <article class="card">
+        <div class="card-img-placeholder" role="img" aria-label="Decorative gradient banner">
+          Web Development Internship
+        </div>
+
+        <div class="card-body">
+          <h2>Welcome to Cognifyz Technologies</h2>
+          <p>
+            This internship program is designed to help you grow as a web developer.
+            Over the course of three levels, you will build real-world projects using
+            HTML, CSS, JavaScript, and front-end frameworks — gaining hands-on experience
+            that prepares you for professional development work.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ③ Form -->
+    <section id="form">
+      <div class="task-row">
+        <span class="task-num" aria-hidden="true">02</span>
+        <div>
+          <span class="badge">Form</span>
+          <h2 class="section-title">Input Field &amp; Submit Button</h2>
+        </div>
+      </div>
+
+      <p class="section-desc">A basic form with a single text input and a styled submit button.</p>
+
+      <div class="form-card">
+        <h2>Get In Touch</h2>
+
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="e.g. Priya Sharma" />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" />
+
+        <button type="submit" class="btn">Submit</button>
+      </div>
+    </section>
+
+    <!-- ④ About / Navigation -->
+    <section id="about">
+      <div class="task-row">
+        <span class="task-num" aria-hidden="true">03</span>
+        <div>
+          <span class="badge">Navigation</span>
+          <h2 class="section-title">Three-Link Navigation Menu</h2>
+        </div>
+      </div>
+
+      <p class="section-desc">
+        The sticky nav bar at the top demonstrates navigation menu with hover effects.
+      </p>
+
+      <div class="card">
+        <div class="card-body">
+          <h2 style="margin-bottom:10px;">How it works</h2>
+          <p>
+            The <code style="background:#f0f0f0;padding:2px 6px;border-radius:4px;">&lt;nav&gt;</code>
+            element contains three links and CSS handles layout, hover, and sticky behavior.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Built for <strong>Cognifyz Technologies</strong> Web Developer Internship · Level 1, Task 1
+  </footer>
+
+</body>
+</html>
